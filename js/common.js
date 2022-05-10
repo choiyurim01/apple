@@ -1,12 +1,16 @@
 $(document).ready(function () {
-  memuAni()
+  subStage()
 });
 
 
-//햄버거 애니메이션 구현
-function memuAni() {
-  $('.navi-wrapper > .m-menu').click(function(){
-    $('.btn-memu').toggleClass('active')
-    console.log('실행');
+function subStage() {
+  $('.sub-stage').slideUp(0);
+
+  $('.navi-wrapper .m-menu').click(function(){
+    //햄버거 애니메이션 구현
+    $('.navi .btn-memu').toggleClass('active');
+    $('.navi-wrap.bag img').toggleClass('hidden')
+    $('.sub-stage').slideToggle()
   });
+
 }
