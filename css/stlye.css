@@ -1,3 +1,19 @@
 /********************* ribbon *********************/
 .ribbon-wrapper {font-size: 14px; text-align: center;}
 .ribbon-wrapper .ribbon-wrap {max-width: 640px; margin: 0 auto; padding: 12px;}
+
+
+/********************* ribbon *********************/
+.main-stage .unit-wrapper {position: relative; height: 692px;}
+.main-stage .unit-wrapper .unit-link {position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 3;}
+.main-stage .unit-wrapper .copy-wrapper {padding-top: 55px; text-align: center; z-index: 4;}
+.main-stage .unit-wrapper .copy-wrapper h2.head-line {margin: 0; font-size: 48px; font-weight: 600;}
+.main-stage .unit-wrapper .copy-wrapper h3.sub-head {margin: 0; font-size: 24px; font-weight: 400; margin-top: 5px;}
+.main-stage .unit-wrapper .cta-links {color: #06c; font-size: 21px;}
+.main-stage .unit-wrapper .cta-links .cta-link:last-child {padding-right: 35px;}
+
+.main-stage .unit-wrapper .img-wrapper {position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 1;}
+.main-stage .unit-wrapper .img-wrapper .img {position: absolute; border: 0; margin: 0; padding: 0; bottom: 0px; top: auto;
+  right: auto; left: calc(50% + 0px);  transform: translatex(-50%); width: 100%; height: 100%; background-repeat: no-repeat;
+  background-size: 3008px 736px;}
+.main-stage .unit-wrapper .img-wrapper .img.iphone13pro {background: url(../img/unit_iphone13pro_L.jpg);}
