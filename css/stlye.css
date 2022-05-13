@@ -3,8 +3,9 @@
 .ribbon-wrapper .ribbon-wrap {max-width: 640px; margin: 0 auto; padding: 1em;}
 
 
-/********************* ribbon *********************/
-.main-stage .unit-wrapper {position: relative; height: 704px; padding-bottom: 10px; background-color: #fff;}
+/********************* unit-wrapper *********************/
+.main-stage {background-color: #fff;}
+.main-stage .unit-wrapper {position: relative; height: 704px; padding-bottom: 10px;}
 .main-stage .unit-wrapper .unit-link {position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 3;}
 .main-stage .unit-wrapper .copy-wrapper {position: absolute; padding-top: 55px; text-align: center; width: 100%; z-index: 4;}
 .main-stage .unit-wrapper .copy-wrapper h2.head-line {margin: 0; font-size: 48px; font-weight: 600;}
@@ -28,4 +29,13 @@
 .main-stage .unit-wrapper .copy-wrapper h2.head-line .iphoneSe {height: 55px;}
 .main-stage .unit-wrapper .img-wrapper .img.iphone13pro {background: url(../img/unit_iphone13pro_L.jpg) center no-repeat; }
 .main-stage .unit-wrapper .img-wrapper .img.iphoneSe {background: url(../img/unit_iphonese_L.jpg) center no-repeat; }
-.main-stage .unit-wrapper .img-wrapper .img.ipadAir{background: url(../img/unit_ipadair_L.jpg) center no-repeat; }
+.main-stage .unit-wrapper .img-wrapper .img.ipadAir {background: url(../img/unit_ipadair_L.jpg) center no-repeat; }
+.main-stage .unit-wrapper .img-wrapper .img.announce {background: url(../img/promo_announce_L.jpg) center no-repeat; }
+.main-stage .unit-wrapper .img-wrapper .img.watch {background: url(../img/promo_watch_L.jpg) center no-repeat;}
+.main-stage .unit-wrapper .img-wrapper .img.display {background: url(../img/promo_display_L.jpg) center no-repeat;}
+.main-stage .unit-wrapper .img-wrapper .img.macStudio {background: url(../img/promo_macstudio_L.jpg) center no-repeat;}
+.main-stage .unit-wrapper .img-wrapper .img.tradeIn {background: url(../img/promo_tradeIn_L.jpg) center no-repeat;}
+.main-stage .unit-wrapper .img-wrapper .img.appleTv {background: url(../img/promo_appTV_L.jpg) center no-repeat;}
+
+.main-stage .prom-section .unit-wrapper {height: 580px;}
+.main-stage .prom-section .unit-wrapper .img-wrapper .img {height: 580px;}
