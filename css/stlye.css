@@ -1,19 +1,31 @@
 /********************* ribbon *********************/
 .ribbon-wrapper {font-size: 14px; text-align: center;}
-.ribbon-wrapper .ribbon-wrap {max-width: 640px; margin: 0 auto; padding: 12px;}
+.ribbon-wrapper .ribbon-wrap {max-width: 640px; margin: 0 auto; padding: 1em;}
 
 
 /********************* ribbon *********************/
-.main-stage .unit-wrapper {position: relative; height: 692px;}
+.main-stage .unit-wrapper {position: relative; height: 704px; padding-bottom: 10px; background-color: #fff;}
 .main-stage .unit-wrapper .unit-link {position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 3;}
-.main-stage .unit-wrapper .copy-wrapper {padding-top: 55px; text-align: center; z-index: 4;}
+.main-stage .unit-wrapper .copy-wrapper {position: absolute; padding-top: 55px; text-align: center; width: 100%; z-index: 4;}
 .main-stage .unit-wrapper .copy-wrapper h2.head-line {margin: 0; font-size: 48px; font-weight: 600;}
-.main-stage .unit-wrapper .copy-wrapper h3.sub-head {margin: 0; font-size: 24px; font-weight: 400; margin-top: 5px;}
-.main-stage .unit-wrapper .cta-links {color: #06c; font-size: 21px;}
-.main-stage .unit-wrapper .cta-links .cta-link:last-child {padding-right: 35px;}
+.main-stage .unit-wrapper .copy-wrapper h3.sub-head {margin: 0; font-size: 24px; font-weight: 400; margin-top: .5em;}
+.main-stage .unit-wrapper .copy-wrapper h3.sub-title {margin: 0; font-size: 20px; font-weight: 600;}
+.main-stage .unit-wrapper .cta-links {font-size: 18px; margin-top: 1em;}
+.main-stage .unit-wrapper .cta-links .cta-link:last-child {padding-left: 35px;}
+.main-stage .unit-wrapper .cta-links .cta-link::after {content: ''; display:inline-block; width: 6px; height: 6px; transform: rotate(45deg);
+  border-top: 1.75px solid #06c; border-right: 1.75px solid #06c; margin: 0 0 2px 5px;}
+
+.main-stage .unit-wrapper .copy-wrapper.ipadAir {padding: 253px; right: 337px;}
+.main-stage .unit-wrapper .copy-wrapper.ipadAir h2.head-line img {height: 52px;}
+.main-stage .unit-wrapper .copy-wrapper.ipadAir h3.sub-head {color: #fff;}
+.main-stage .unit-wrapper .copy-wrapper.ipadAir .cta-link {color: #2997ff;}
+.main-stage .unit-wrapper .copy-wrapper.ipadAir .cta-link::after {border-color: #2997ff;}
 
 .main-stage .unit-wrapper .img-wrapper {position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 1;}
-.main-stage .unit-wrapper .img-wrapper .img {position: absolute; border: 0; margin: 0; padding: 0; bottom: 0px; top: auto;
-  right: auto; left: calc(50% + 0px);  transform: translatex(-50%); width: 100%; height: 100%; background-repeat: no-repeat;
-  background-size: 3008px 736px;}
-.main-stage .unit-wrapper .img-wrapper .img.iphone13pro {background: url(../img/unit_iphone13pro_L.jpg);}
+.main-stage .unit-wrapper .img-wrapper .img {position: absolute; margin: 0; bottom: 0px; top: 0; right: auto;z-index: 1;
+  left: calc(50% + 0px); transform: translatex(-50%); width: 100%; height: 694px; background-position-x: center;}
+
+.main-stage .unit-wrapper .copy-wrapper h2.head-line .iphoneSe {height: 55px;}
+.main-stage .unit-wrapper .img-wrapper .img.iphone13pro {background: url(../img/unit_iphone13pro_L.jpg) center no-repeat; }
+.main-stage .unit-wrapper .img-wrapper .img.iphoneSe {background: url(../img/unit_iphonese_L.jpg) center no-repeat; }
+.main-stage .unit-wrapper .img-wrapper .img.ipadAir{background: url(../img/unit_ipadair_L.jpg) center no-repeat; }

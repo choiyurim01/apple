@@ -1,418 +1,509 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/common.css">
-  <link rel="stylesheet" href="../css/stlye.css">
-  <script src="../js/jquery-3.1.1.min.js"></script>
-  <script src="../js/common.js"></script>
-  <title>Apple (테스트)</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/stlye.css">
+        <script src="../js/jquery-3.1.1.min.js"></script>
+        <script src="../js/common.js"></script>
+        <title>Apple (테스트)</title>
+    </head>
 
-<body>
-  
-  <!-- GNB st -->
-  <nav class="navi-container">
-    <ul class="navi-wrapper">
-      <li class="navi-wrap m-menu">
-        <a href="#" class="navi">
-          <span class="btn-memu"></span>
-          <span class="btn-memu"></span>
-        </a>
-      </li>
-      <li class="navi-wrap logo">
-        <a href="#" class="navi">
-          <img src="../img/apple_logo.svg" alt="apple_logo">
-        </a>
-      </li>
-      <li class="navi-wrap">
-        <a href="#" class="navi">스토어</a>
-      </li>
-      <li class="navi-wrap">
-        <a href="#" class="navi"><span></span>Mac</a>
-      </li>
-      <li class="navi-wrap">
-        <a href="#" class="navi"><span></span>iPad</a>
-      </li>
-      <li class="navi-wrap">
-        <a href="#" class="navi"><span></span>iPhone</a>
-      </li>
-      <li class="navi-wrap">
-        <a href="#" class="navi"><span></span>Watch</a>
-      </li>
-      <li class="navi-wrap">
-        <a href="#" class="navi"><span></span>AirPods</a>
-      </li>
-      <li class="navi-wrap">
-        <a href="#" class="navi"><span></span>TV 및 홈</a>
-      </li>
-      <li class="navi-wrap">
-        <a href="#" class="navi"><span></span>Apple 독점 제공</a>
-      </li>
-      <li class="navi-wrap">
-        <a href="#" class="navi"><span></span>액세서리</a>
-      </li>
-      <li class="navi-wrap">
-        <a href="#" class="navi"><span></span>고객지원</a>
-      </li>
-      <li class="navi-wrap">
-        <a href="#" class="navi">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-          </svg>
-        </a>
-      </li>
-      <li class="navi-wrap bag">
-        <a href="#" class="navi">
-          <img src="../img/bag.svg" alt="">
-        </a>
-      </li>
-    </ul>
-    <!-- sub 메뉴 st -->
-    <ul class="sub-stage">
-     <li class="search-wrapper">
-       <input type="text" class="search-ipt" placeholder="apple.com 검색">
-         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-           <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-         </svg>
-       <div class="btn-close">취소</span>
-     </li>
-     <li class="sub-wrapper">
-       <ul class="sub-wrap">
-         <li class="sub-navi">
-           <a href="#" class="sub">스토어</a>
-         </li>
-         <li class="sub-navi">
-           <a href="#" class="sub">Mac</a>
-         </li>
-         <li class="sub-navi">
-           <a href="#" class="sub">iPad</a>
-         </li>
-         <li class="sub-navi">
-           <a href="#" class="sub">iPhone</a>
-         </li>
-         <li class="sub-navi">
-           <a href="#" class="sub">Watch</a>
-         </li>
-         <li class="sub-navi">
-           <a href="#" class="sub">AirPods</a>
-         </li>
-         <li class="sub-navi">
-           <a href="#" class="sub">TV 및 홈</a>
-         </li>
-         <li class="sub-navi">
-           <a href="#" class="sub">Apple 독점 제공</a>
-         </li>
-         <li class="sub-navi">
-           <a href="#" class="sub">액세서리</a>
-         </li>
-         <li class="sub-navi">
-           <a href="#" class="sub">고객지원</a>
-         </li>
-       </ul>
-       <ul class="quickLink-wrap">
-         <h3 class="sub-title">빠른링크</h3>
-         <li class="quckLink-navi">
-           <a href="#" class="quickLink">Apple Store 임시 휴무 관련 자주하는 질문</a>
-         </li>
-         <li class="quckLink-navi">
-           <a href="#" class="quickLink">Apple Store Online에서 쇼핑하기</a>
-         </li>
-         <li class="quckLink-navi">
-           <a href="#" class="quickLink">액세서리</a>
-         </li>
-         <li class="quckLink-navi">
-           <a href="#" class="quickLink">AirPods</a>
-         </li>
-         <li class="quckLink-navi">
-           <a href="#" class="quickLink">AirTag</a>
-         </li>
-       </ul>
-      </li>
-    </ul>
-    <!-- sub 메뉴 ed -->
-  </nav>
-  <!-- GNB ed -->
+    <body>
 
-  <header class="ribbon-wrapper">
-    <div class="ribbon-wrap">
-      <a href="#" class="link">온라인으로 쇼핑</a>하고 무료 배송,
-      스페셜리스트 지원 등의 혜택을 받으세요.</div>
-  </header>
+        <!-- GNB st -->
+        <nav class="navi-container">
+            <ul class="navi-wrapper">
+                <li class="navi-wrap m-menu">
+                    <a href="#" class="navi">
+                        <span class="btn-memu"></span>
+                        <span class="btn-memu"></span>
+                    </a>
+                </li>
+                <li class="navi-wrap logo">
+                    <a href="#" class="navi">
+                        <img src="../img/apple_logo.svg" alt="apple_logo">
+                    </a>
+                </li>
+                <li class="navi-wrap">
+                    <a href="#" class="navi">스토어</a>
+                </li>
+                <li class="navi-wrap">
+                    <a href="#" class="navi">
+                        <span></span>Mac</a>
+                </li>
+                <li class="navi-wrap">
+                    <a href="#" class="navi">
+                        <span></span>iPad</a>
+                </li>
+                <li class="navi-wrap">
+                    <a href="#" class="navi">
+                        <span></span>iPhone</a>
+                </li>
+                <li class="navi-wrap">
+                    <a href="#" class="navi">
+                        <span></span>Watch</a>
+                </li>
+                <li class="navi-wrap">
+                    <a href="#" class="navi">
+                        <span></span>AirPods</a>
+                </li>
+                <li class="navi-wrap">
+                    <a href="#" class="navi">
+                        <span></span>TV 및 홈</a>
+                </li>
+                <li class="navi-wrap">
+                    <a href="#" class="navi">
+                        <span></span>Apple 독점 제공</a>
+                </li>
+                <li class="navi-wrap">
+                    <a href="#" class="navi">
+                        <span></span>액세서리</a>
+                </li>
+                <li class="navi-wrap">
+                    <a href="#" class="navi">
+                        <span></span>고객지원</a>
+                </li>
+                <li class="navi-wrap">
+                    <a href="#" class="navi">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-search"
+                            viewbox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="navi-wrap bag">
+                    <a href="#" class="navi">
+                        <img src="../img/bag.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <!-- sub 메뉴 st -->
+            <ul class="sub-stage">
+                <li class="search-wrapper">
+                    <input type="text" class="search-ipt" placeholder="apple.com 검색">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-search"
+                        viewbox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                    <div class="btn-close">취소</span>
+                </li>
+                <li class="sub-wrapper">
+                    <ul class="sub-wrap">
+                        <li class="sub-navi">
+                            <a href="#" class="sub">스토어</a>
+                        </li>
+                        <li class="sub-navi">
+                            <a href="#" class="sub">Mac</a>
+                        </li>
+                        <li class="sub-navi">
+                            <a href="#" class="sub">iPad</a>
+                        </li>
+                        <li class="sub-navi">
+                            <a href="#" class="sub">iPhone</a>
+                        </li>
+                        <li class="sub-navi">
+                            <a href="#" class="sub">Watch</a>
+                        </li>
+                        <li class="sub-navi">
+                            <a href="#" class="sub">AirPods</a>
+                        </li>
+                        <li class="sub-navi">
+                            <a href="#" class="sub">TV 및 홈</a>
+                        </li>
+                        <li class="sub-navi">
+                            <a href="#" class="sub">Apple 독점 제공</a>
+                        </li>
+                        <li class="sub-navi">
+                            <a href="#" class="sub">액세서리</a>
+                        </li>
+                        <li class="sub-navi">
+                            <a href="#" class="sub">고객지원</a>
+                        </li>
+                    </ul>
+                    <ul class="quickLink-wrap">
+                        <h3 class="sub-title">빠른링크</h3>
+                        <li class="quckLink-navi">
+                            <a href="#" class="quickLink">Apple Store 임시 휴무 관련 자주하는 질문</a>
+                        </li>
+                        <li class="quckLink-navi">
+                            <a href="#" class="quickLink">Apple Store Online에서 쇼핑하기</a>
+                        </li>
+                        <li class="quckLink-navi">
+                            <a href="#" class="quickLink">액세서리</a>
+                        </li>
+                        <li class="quckLink-navi">
+                            <a href="#" class="quickLink">AirPods</a>
+                        </li>
+                        <li class="quckLink-navi">
+                            <a href="#" class="quickLink">AirTag</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- sub 메뉴 ed -->
+        </nav>
+        <!-- GNB ed -->
 
-  <!-- main-stage st -->
-  <main class="main-stage">
+        <header class="ribbon-wrapper">
+            <div class="ribbon-wrap">
+                <a href="#" class="link">온라인으로 쇼핑</a>하고 무료 배송, 스페셜리스트 지원 등의 혜택을 받으세요.</div>
+        </header>
 
-    <div class="unit-wrapper">
-      <a href="#" class="unit-link"></a>
-      <div class="copy-wrapper">
-        <h2 class="head-line">iPhone 13 Pro</h2>
-        <h3 class="sub-head">이게 바로 프로.</h3>
-        <div class="cta-links">
-          <a href="#" class="cta-link">더 알아보기 〉</a>
-          <a href="#" class="cta-link">구입하기 〉</a>
-        </div>
-      </div>
-      <div class="img-wrapper">
-        <figure class="img iphone13pro"></figure>
-      </div>
-     
-    </div>
-    
-  </main>
-  <!-- main-stage ed -->
+        <!-- main-stage st -->
+        <main class="main-stage">
 
-  <!-- footer st -->
-  <footer class="footer-container">
-    <div class="footer-stage">
+            <section class="section-warpper">
+                <!-- iPhone 13 Pro -->
+                <div class="unit-wrapper">
+                    <a href="#" class="unit-link"></a>
+                    <div class="copy-wrapper">
+                        <h2 class="head-line">iPhone 13 Pro</h2>
+                        <h3 class="sub-head">이게 바로 프로.</h3>
+                        <div class="cta-links">
+                            <a href="#" class="cta-link link">더 알아보기</a>
+                            <a href="#" class="cta-link link">구입하기</a>
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <figure class="img iphone13pro"></figure>
+                    </div>
 
-    <!-- note-wrapper st -->
-    <section class="note-wrapper">
-      <ol class="note-wrap">
-        <li class="note">
-          2022년 5월 31일까지 보상 판매 대상 iPhone, iPad, Mac 또는 Apple Watch를 반납하면 새 Apple 기기 구입 시 사용할 수 있는 크레딧을 추가로 제공합니다. 추가 보상 판매 크레딧은 iPhone은 ₩10,000 ~ ₩30,000, iPad는 ₩20,000 ~ ₩50,000, Mac은 ₩50,000 ~ ₩110,000, Apple Watch는 ₩20,000 ~ ₩40,000 상당입니다. Apple 또는 Apple 보상 판매 파트너사의 약관이 추가로 적용될 수 있습니다.
-        </li>
-        <li class="note marker-none">
-          보상 판매 프로그램은 Apple의 파트너이자 독립적으로 운영되는 제3의 업체에 의해 제공됩니다. Apple 및 Apple의 계열사는 고객과 파트너 간 계약의 당사자가 아닙니다. 보상 판매 금액은 보상 판매 대상이 되는 제품의 상태, 연도, 구성에 따라 달라집니다. 일부 기기는 보상 판매 대상이 아닙니다. 크레딧 또는 Apple Store Gift Card로 보상 판매를 받으려면 19세 이상이어야 합니다. 보상 판매 금액은 적용 가능한 새 기기 구입 시 적용하거나 Apple Store Gift Card로 받을 수 있습니다. 최종 확정 금액은 보상 판매 대상 기기를 수령한 후, 예상 금액 산정 시 제시한 기기의 설명과 일치하는지 비교 검수 후 정해집니다. 부가세는 새로 구입한 기기의 총액을 바탕으로 부과됩니다. 일부 매장에서는 보상 판매를 제공하지 않으며, 매장 내 보상 판매와 온라인 보상 판매 프로그램 간 내용에 차이가 있을 수 있습니다. 일부 매장은 추가 요구 사항이 있을 수 있습니다. Apple 또는 보상 판매 파트너사는 어떤 보상 판매도 거래를 거부하거나, 보상 판매 수량을 제한할 권리를 보유합니다. 적용 가능 기기의 보상 판매 및 재활용에 대한 자세한 내용은 Apple의 보상 판매 파트너사에서 확인할 수 있습니다. 규제 및 제한이 적용될 수 있습니다.
-        </li>
-        <li class="note marker-start-two">
-          Apple TV+는 무료 체험 기간 종료 후 월 6,500원에 이용 가능합니다. 해지는 무료 체험 기간 중에도 가능합니다. 가족 공유 그룹당 하나의 멤버십 이용이 가능합니다. 무료 체험 혜택은 2021년 11월 4일부터 대상 기기 활성화 이후 3개월 안에 신청 가능합니다. 멤버십은 매월 자동 갱신되며, 해지 시 종료됩니다. 제한 사항 및 기타 약관이 적용됩니다.
-        </li>
-      </ol>
-    </section>
-    <!-- note-wrapper ed -->
+                </div>
 
-    <!-- directory-wrapper st -->
-    <section class="directory-wrapper">
-      <div class="directory-wrap">
-        <h3 class="directory-title">쇼핑 및 알아보기</h3>
-        <ul class="directory-list">
-          <li class="list">
-            <a href="#">스토어</a>
-          </li>
-          <li class="list">
-            <a href="#">Mac</a>
-          </li>
-          <li class="list">
-            <a href="#">iPad</a>
-          </li>
-          <li class="list">
-            <a href="#">iPhone</a>
-          </li>
-          <li class="list">
-            <a href="#">Watch</a>
-          </li>
-          <li class="list">
-            <a href="#">AirPods</a>
-          </li>
-          <li class="list">
-            <a href="#">TV 및 홈</a>
-          </li>
-          <li class="list">
-            <a href="#">iPod touch</a>
-          </li>
-          <li class="list">
-            <a href="#">AirTag</a>
-          </li>
-          <li class="list">
-            <a href="#">액세서리</a>
-          </li>
-        </ul>
-      </div>
+                <!-- iPone se -->
+                <div class="unit-wrapper">
+                    <a href="#" class="unit-link"></a>
+                    <div class="copy-wrapper">
+                      <h3 class="sub-title">
+                          새로운
+                      </h3>
+                        <h2 class="head-line">
+                            <img src="../img/unit_title_iphonese_L.png" class="iphoneSe">
+                        </h2>
+                        <h3 class="sub-head mt-1">
+                            거침없는 파워. 실속 있는 선택.
+                        </h3>
+                        <div class="cta-links">
+                            <a href="#" class="cta-link link">더 알아보기</a>
+                            <a href="#" class="cta-link link">구입하기</a>
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <figure class="img iphoneSe"></figure>
+                    </div>
+                </div>
 
-      <div class="directory-wrap">
-        <h3 class="directory-title">서비스</h3>
-        <ul class="directory-list">
-          <li class="list">
-            <a href="#">Apple Music</a>
-          </li>
-          <li class="list">
-            <a href="#">Apple TV+</a>
-          </li>
-          <li class="list">
-            <a href="#">Apple Arcade</a>
-          </li>
-          <li class="list">
-            <a href="#">iCloud</a>
-          </li>
-          <li class="list">
-            <a href="#">Apple Books</a>
-          </li>
-          <li class="list">
-            <a href="#">Apple Podcast</a>
-          </li>
-          <li class="list">
-            <a href="#">App Store</a>
-          </li>
-        </ul>
-        <h3 class="directory-title">계정</h3>
-        <ul class="directory-list">
-          <li class="list">
-            <a href="#">Apple ID 관리</a>
-          </li>
-          <li class="list">
-            <a href="#">Apple Store 계정</a>
-          </li>
-          <li class="list">
-            <a href="#">iCloud.com</a>
-          </li>
-        </ul>
-      </div>
+                <!-- iPad air -->
+                <div class="unit-wrapper">
+                    <a href="#" class="unit-link"></a>
+                    <div class="copy-wrapper ipadAir">
+                        <h2 class="head-line">
+                            <img src="../img/unit_title_ipadair_L.png" class="ipadAir">
+                        </h2>
+                        <h3 class="sub-head">
+                            가뿐하게. 색다르게. 강력하게
+                        </h3>
+                        <div class="cta-links">
+                            <a href="#" class="cta-link link">더 알아보기</a>
+                            <a href="#" class="cta-link link">구입하기</a>
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <figure class="img ipadAir"></figure>
+                    </div>
 
-      <div class="directory-wrap">
-        <h3 class="directory-title">Apple Store</h3>
-        <ul class="directory-list">
-          <li class="list">
-            <a href="#">매장 찾기</a>
-          </li>
-          <li class="list">
-            <a href="#">Genius Bar</a>
-          </li>
-          <li class="list">
-            <a href="#">Today at Apple</a>
-          </li>
-          <li class="list">
-            <a href="#">Apple 캠프</a>
-          </li>
-          <li class="list">
-            <a href="#">Apple Store 앱</a>
-          </li>
-          <li class="list">
-            <a href="#">리퍼 및 특가 제품</a>
-          </li>
-          <li class="list">
-            <a href="#">금융 혜택</a>
-          </li>
-          <li class="list">
-            <a href="#">Apple Trade In</a>
-          </li>
-          <li class="list">
-            <a href="#">주문 상태</a>
-          </li>
-          <li class="list">
-            <a href="#">쇼핑 도움말</a>
-          </li>
-        </ul>
-      </div>
-      
-      <div class="directory-wrap">
-        <h3 class="directory-title">비즈니스</h3>
-        <ul class="directory-list">
-          <li class="list">
-            <a href="#">Apple과 비즈니스</a>
-          </li>
-          <li class="list">
-            <a href="#">비즈니스를 위한 제품 쇼핑하기</a>
-          </li>
-        </ul>
-        <h3 class="directory-title">교육</h3>
-        <ul class="directory-list">
-          <li class="list">
-            <a href="#">Apple과 교육</a>
-          </li>
-          <li class="list">
-            <a href="#">초중고용 제품 쇼핑하기</a>
-          </li>
-          <li class="list">
-            <a href="#">대학 생활을 위한 제품 쇼핑하기</a>
-          </li>
-        </ul>
-      </div>
+                </div>
+            </section>
 
-      <div class="directory-wrap">
-        <h3 class="directory-title">Apple의 가치관</h3>
-        <ul class="directory-list">
-          <li class="list">
-            <a href="#">손쉬운 사용</a>
-          </li>
-          <li class="list">
-            <a href="#">환경</a>
-          </li>
-          <li class="list">
-            <a href="#">개인정보 보호</a>
-          </li>
-          <li class="list">
-            <a href="#">협력업체에 대한 책임</a>
-          </li>
-        </ul>
-        <h3 class="directory-title">Apple 정보</h3>
-        <ul class="directory-list">
-          <li class="list">
-            <a href="#">Newsroom</a>
-          </li>
-          <li class="list">
-            <a href="#">Apple 리더십</a>
-          </li>
-          <li class="list">
-            <a href="#">채용 안내</a>
-          </li>
-          <li class="list">
-            <a href="#">윤리 및 규정 준수</a>
-          </li>
-          <li class="list">
-            <a href="#">이벤트</a>
-          </li>
-          <li class="list">
-            <a href="#">일자리 창출</a>
-          </li>
-          <li class="list">
-            <a href="#">Apple 연락처</a>
-          </li>
-        </ul>
-      </div>
+        </main>
+        <!-- main-stage ed -->
 
-    </section>
-    <!-- directory-wrapper st --> 
+        <!-- footer st -->
+        <footer class="footer-container">
+            <div class="footer-stage">
 
-    <section class="copyright-wrapper">
-      <div class="shop-wrap">
-        <p class="shop">
-          다양한 쇼핑 방법 : <a href="#" class="link">Apple Store를 방문</a>하거나, <a href="#" class="link">리셀러</a>를 찾아보거나, 080-330-8877번으로 전화하세요.
-        </p>
-      </div>
+                <!-- note-wrapper st -->
+                <section class="note-wrapper">
+                    <ol class="note-wrap">
+                        <li class="note">
+                            2022년 5월 31일까지 보상 판매 대상 iPhone, iPad, Mac 또는 Apple Watch를 반납하면 새 Apple 기기 구입 시
+                            사용할 수 있는 크레딧을 추가로 제공합니다. 추가 보상 판매 크레딧은 iPhone은 ₩10,000 ~ ₩30,000, iPad는 ₩20,000
+                            ~ ₩50,000, Mac은 ₩50,000 ~ ₩110,000, Apple Watch는 ₩20,000 ~ ₩40,000 상당입니다. Apple
+                            또는 Apple 보상 판매 파트너사의 약관이 추가로 적용될 수 있습니다.
+                        </li>
+                        <li class="note marker-none">
+                            보상 판매 프로그램은 Apple의 파트너이자 독립적으로 운영되는 제3의 업체에 의해 제공됩니다. Apple 및 Apple의 계열사는 고객과
+                            파트너 간 계약의 당사자가 아닙니다. 보상 판매 금액은 보상 판매 대상이 되는 제품의 상태, 연도, 구성에 따라 달라집니다. 일부 기기는 보상
+                            판매 대상이 아닙니다. 크레딧 또는 Apple Store Gift Card로 보상 판매를 받으려면 19세 이상이어야 합니다. 보상 판매 금액은
+                            적용 가능한 새 기기 구입 시 적용하거나 Apple Store Gift Card로 받을 수 있습니다. 최종 확정 금액은 보상 판매 대상 기기를
+                            수령한 후, 예상 금액 산정 시 제시한 기기의 설명과 일치하는지 비교 검수 후 정해집니다. 부가세는 새로 구입한 기기의 총액을 바탕으로
+                            부과됩니다. 일부 매장에서는 보상 판매를 제공하지 않으며, 매장 내 보상 판매와 온라인 보상 판매 프로그램 간 내용에 차이가 있을 수 있습니다.
+                            일부 매장은 추가 요구 사항이 있을 수 있습니다. Apple 또는 보상 판매 파트너사는 어떤 보상 판매도 거래를 거부하거나, 보상 판매 수량을
+                            제한할 권리를 보유합니다. 적용 가능 기기의 보상 판매 및 재활용에 대한 자세한 내용은 Apple의 보상 판매 파트너사에서 확인할 수 있습니다.
+                            규제 및 제한이 적용될 수 있습니다.
+                        </li>
+                        <li class="note marker-start-two">
+                            Apple TV+는 무료 체험 기간 종료 후 월 6,500원에 이용 가능합니다. 해지는 무료 체험 기간 중에도 가능합니다. 가족 공유 그룹당
+                            하나의 멤버십 이용이 가능합니다. 무료 체험 혜택은 2021년 11월 4일부터 대상 기기 활성화 이후 3개월 안에 신청 가능합니다. 멤버십은
+                            매월 자동 갱신되며, 해지 시 종료됩니다. 제한 사항 및 기타 약관이 적용됩니다.
+                        </li>
+                    </ol>
+                </section>
+                <!-- note-wrapper ed -->
 
-      <div class="copyright-wrap">
-        <ul class="legal-wrap">
-          <li class="copyright">
-            Copyright © 2022 Apple Inc. 모든 권리 보유.
-          </li>
-          <li class="legal-link">
-            <a href="#">개인정보 처리방침</a>
-          </li>
-          <li class="legal-link">
-            <a href="#">웹 사이트 이용 약관</a>
-          </li>
-          <li class="legal-link">
-            <a href="#">판매 및 환불</a>
-          </li>
-          <li class="legal-link">
-            <a href="#">법적 고지</a>
-          </li>
-          <li class="legal-link">
-            <a href="#">사이트 맵</a>
-          </li>
-        </ul>
-        <a href="#" class="legal-link">대한민국</a>
-      </div>
+                <!-- directory-wrapper st -->
+                <section class="directory-wrapper">
+                    <div class="directory-wrap">
+                        <h3 class="directory-title">쇼핑 및 알아보기</h3>
+                        <ul class="directory-list">
+                            <li class="list">
+                                <a href="#">스토어</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">Mac</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">iPad</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">iPhone</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">Watch</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">AirPods</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">TV 및 홈</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">iPod touch</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">AirTag</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">액세서리</a>
+                            </li>
+                        </ul>
+                    </div>
 
-      <div class="info-wrap">
-        <span class="info">사업자등록번호 : 120-81-84429 |</span>
-        <span class="info">통신판매업신고번호 : 제 2011-서울강남-00810호 | </span>
-        <span class="info"> 대표이사 : PETER DENWOOD | </span>
-        <span class="info">주소 : 서울 특별시 강남구 영동대로 517 | </span>
-        <span class="info">대표전화 : 02-6712-6700 | </span>
-        <span class="info">팩스 : 02-6928-0000</span>
-      </div>
-    </section>
+                    <div class="directory-wrap">
+                        <h3 class="directory-title">서비스</h3>
+                        <ul class="directory-list">
+                            <li class="list">
+                                <a href="#">Apple Music</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">Apple TV+</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">Apple Arcade</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">iCloud</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">Apple Books</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">Apple Podcast</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">App Store</a>
+                            </li>
+                        </ul>
+                        <h3 class="directory-title">계정</h3>
+                        <ul class="directory-list">
+                            <li class="list">
+                                <a href="#">Apple ID 관리</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">Apple Store 계정</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">iCloud.com</a>
+                            </li>
+                        </ul>
+                    </div>
 
-    </div><!-- footer-stage ed -->
+                    <div class="directory-wrap">
+                        <h3 class="directory-title">Apple Store</h3>
+                        <ul class="directory-list">
+                            <li class="list">
+                                <a href="#">매장 찾기</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">Genius Bar</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">Today at Apple</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">Apple 캠프</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">Apple Store 앱</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">리퍼 및 특가 제품</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">금융 혜택</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">Apple Trade In</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">주문 상태</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">쇼핑 도움말</a>
+                            </li>
+                        </ul>
+                    </div>
 
-  </footer>
-  <!-- footer ed -->
+                    <div class="directory-wrap">
+                        <h3 class="directory-title">비즈니스</h3>
+                        <ul class="directory-list">
+                            <li class="list">
+                                <a href="#">Apple과 비즈니스</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">비즈니스를 위한 제품 쇼핑하기</a>
+                            </li>
+                        </ul>
+                        <h3 class="directory-title">교육</h3>
+                        <ul class="directory-list">
+                            <li class="list">
+                                <a href="#">Apple과 교육</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">초중고용 제품 쇼핑하기</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">대학 생활을 위한 제품 쇼핑하기</a>
+                            </li>
+                        </ul>
+                    </div>
 
-</body>
+                    <div class="directory-wrap">
+                        <h3 class="directory-title">Apple의 가치관</h3>
+                        <ul class="directory-list">
+                            <li class="list">
+                                <a href="#">손쉬운 사용</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">환경</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">개인정보 보호</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">협력업체에 대한 책임</a>
+                            </li>
+                        </ul>
+                        <h3 class="directory-title">Apple 정보</h3>
+                        <ul class="directory-list">
+                            <li class="list">
+                                <a href="#">Newsroom</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">Apple 리더십</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">채용 안내</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">윤리 및 규정 준수</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">이벤트</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">일자리 창출</a>
+                            </li>
+                            <li class="list">
+                                <a href="#">Apple 연락처</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </section>
+                <!-- directory-wrapper st -->
+
+                <section class="copyright-wrapper">
+                    <div class="shop-wrap">
+                        <p class="shop">
+                            다양한 쇼핑 방법 :
+                            <a href="#" class="link">Apple Store를 방문</a>하거나,
+                            <a href="#" class="link">리셀러</a>를 찾아보거나, 080-330-8877번으로 전화하세요.
+                        </p>
+                    </div>
+
+                    <div class="copyright-wrap">
+                        <ul class="legal-wrap">
+                            <li class="copyright">
+                                Copyright © 2022 Apple Inc. 모든 권리 보유.
+                            </li>
+                            <li class="legal-link">
+                                <a href="#">개인정보 처리방침</a>
+                            </li>
+                            <li class="legal-link">
+                                <a href="#">웹 사이트 이용 약관</a>
+                            </li>
+                            <li class="legal-link">
+                                <a href="#">판매 및 환불</a>
+                            </li>
+                            <li class="legal-link">
+                                <a href="#">법적 고지</a>
+                            </li>
+                            <li class="legal-link">
+                                <a href="#">사이트 맵</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="legal-link">대한민국</a>
+                    </div>
+
+                    <div class="info-wrap">
+                        <span class="info">사업자등록번호 : 120-81-84429 |</span>
+                        <span class="info">통신판매업신고번호 : 제 2011-서울강남-00810호 |
+                        </span>
+                        <span class="info">
+                            대표이사 : PETER DENWOOD |
+                        </span>
+                        <span class="info">주소 : 서울 특별시 강남구 영동대로 517 |
+                        </span>
+                        <span class="info">대표전화 : 02-6712-6700 |
+                        </span>
+                        <span class="info">팩스 : 02-6928-0000</span>
+                    </div>
+                </section>
+
+            </div>
+            <!-- footer-stage ed -->
+
+        </footer>
+        <!-- footer ed -->
+
+    </body>
 
 </html>
