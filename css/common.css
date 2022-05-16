@@ -14,6 +14,8 @@ p {margin: 0;}
 .d-block {display: block !important;}
 .hidden {visibility: hidden !important;}
 
+.text-white {color: #fff;}
+.text-orange {color: #bf4800;}
 
 
 /********************* GNB *********************/
